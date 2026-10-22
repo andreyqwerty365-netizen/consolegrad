@@ -1,6 +1,8 @@
 # КонсольГрад
 
-Сайт: https://andreyqwerty365-netizen.github.io/console.grad.github.io/
+**[Открыть сайт — consolegrad.online](https://consolegrad.online/)**
+
+Основной адрес проекта — собственный домен **consolegrad.online**.
 
 Коммерческий лендинг команды, занимавшейся проектированием и запуском игровых комнат под ключ: от подбора оборудования и планировки до монтажа PlayStation-зон и подготовки площадки к работе.
 
@@ -36,7 +38,7 @@ PS Lounge представлен на сайте как отдельный вн�
 - PowerShell smoke-тест;
 - Docker и Nginx;
 - GitHub Actions;
-- GitHub Pages для публикации сайта.
+- собственный домен consolegrad.online.
 
 ## Структура
 
@@ -47,7 +49,7 @@ script.js           интерактивность и анимации
 styles.css          визуальная система и адаптивность
 assets/             фото, видео, логотипы и UI-материалы
 tests/              проверки структуры и ссылок
-Dockerfile          контейнер для альтернативного запуска
+Dockerfile          контейнер сайта на Nginx
 nginx.conf          конфигурация веб-сервера
 ```
 
@@ -70,17 +72,15 @@ node --check script.js
 
 ## Публикация
 
-Сайт публикуется на GitHub Pages из ветки `main` через GitHub Actions (`.github/workflows/pages.yml`).
+Основной сайт: **[https://consolegrad.online/](https://consolegrad.online/)**.
 
-Адрес: https://andreyqwerty365-netizen.github.io/console.grad.github.io/
+Репозиторий: [andreyqwerty365-netizen/consolegrad](https://github.com/andreyqwerty365-netizen/consolegrad).
 
-В Settings → Pages источник публикации должен быть установлен в **GitHub Actions**. После каждого push в `main` workflow проверяет сайт и публикует статические страницы и материалы из `assets/`. Amvera больше не используется.
-
-Dockerfile и конфигурация Nginx сохранены для альтернативного запуска.
+Собственный домен используется как публичный адрес в портфолио. В репозитории сохранены Dockerfile, конфигурация Nginx и workflow GitHub Pages для отдельного статического размещения. Настройки внешнего хостинга и DNS управляются отдельно от исходников сайта.
 
 ## Связанный проект
 
-- **PS Lounge 2.0** — локальное приложение для управления сессиями, оплатами и отчётами игровой площадки.
+- **[PS Lounge 2.1](https://github.com/andreyqwerty365-netizen/PSLounge)** — локальное приложение для управления сессиями, оплатами и отчётами игровой площадки.
 
 ## Лицензия
 
